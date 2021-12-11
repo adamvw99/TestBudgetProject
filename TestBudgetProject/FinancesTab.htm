@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        /* Navigation Bar */
+        .navbar {
+            padding: 20px 10px 20px 0px;
+            background-color: deepskyblue;
+            transition: all ease 0.4s;
+        }
+
+        .navbar-brand {
+            font-size: 22px;
+            color: white !important;
+        }
+
+        .navbar .navbar-nav li a {
+            font-size: 16px;
+            color: white;
+        }
+
+        .fixed {
+            color: black;
+        }
+
+        body {
+            position: relative;
+            left: 5%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="HomePage.htm" class="navbar-brand"><strong>BUDGETU</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="resNav">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="HomePage.htm"><strong>Home</strong></a></li>
+                <li><a href="BudgetTab.htm">Budget</a></li>
+                <li><a href="FinancesTab.htm">Finances</a></li>
+                <li><a href="LearnTab.htm">Learn</a></li>
+                <li><a href="AccountTab.htm">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <h1>Student Credit Score</h1>
+    <p /><hr />
+    <h2>Please insert your monthly fixed and variable expenses</h2>
+
+
+    <form action="/action_page.php"
+          oninput="x.value=parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)+parseInt(e.value)">
+
+        <h3>Fixed Expenses</h3>
+
+        <p>
+            <label name="L1">Rent:</label>
+            <input type="number" id="a" name="a" placeholder="0"> <br />
+        </p>
+
+        <p>
+            <label name="L1">Total Utilities:</label>
+            <input type="number" id="b" name="b" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Insurance Premiums:</label>
+            <input type="number" id="c" name="c" placeholder="0"><br />
+        </p>
+
+
+        <p>
+            <label name="L1">Total Subscription Services:</label>
+            <input type="number" id="d" name="d" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Loan Payments:</label>
+            <input type="number" id="e" name="e" placeholder="0"><br />
+        </p>
+
+        <label name="L1">Total Fixed Expenses</label>
+        =
+        <output name="x" for="a b c d e"></output>
+    </form>
+
+    <form action="/action_page.php"
+          oninput="y.value=parseInt(f.value)+parseInt(g.value)+parseInt(h.value)+parseInt(i.value)+parseInt(j.value)+parseInt(k.value)">
+
+        <p /><hr />
+        <h3>Variable Expenses</h3>
+
+
+        <p>
+            <label name="L1">Total Grocery Expenses:</label>
+            <input type="number" id="f" name="f" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Dining Expenses:</label>
+            <input type="number" id="g" name="g" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Gas Expenses:</label>
+            <input type="number" id="h" name="h" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Shopping Expenses:</label>
+            <input type="number" id="i" name="i" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Recreational Expenses:</label>
+            <input type="number" id="j" name="j" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Miscellaneous Expenses:</label>
+            <input type="number" id="k" name="k" placeholder="0"><br />
+        </p>
+
+        <label name="L1">Total Variable Expenses</label>
+        =
+        <output name="y" for="f g h i j k"></output>
+    </form>
+
+    <form action="/action_page.php"
+          oninput="z.value=parseInt(l.value)+parseInt(m.value)+parseInt(n.value)+parseInt(o.value)">
+
+        <p /><hr />
+        <h3>Income</h3>
+
+        <p>
+            <label name="L1">Monthly Income:</label>
+            <input type="number" id="l" name="l" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Monthly Allowance:</label>
+            <input type="number" id="m" name="m" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Investment Income:</label>
+            <input type="number" id="n" name="n" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Other Forms of Income:</label>
+            <input type="number" id="o" name="o" placeholder="0"><br />
+        </p>
+
+        <label name="L1">Total Income</label>
+        =
+        <output name="z" for="l m n o"></output>
+    </form>
+    <p /><hr />
+
+    <h3>Enter Your Total Fixed Expenses, Variable Expenses, and Income to calculate your Credit Score!</h3>
+
+    <form action="/action_page.php"
+          oninput="s.value=(parseInt(p.value)+parseInt(q.value))/(parseInt(r.value))">
+
+
+        <p>
+            <label name="L1">Total Fixed Expenses:</label>
+            <input type="number" id="p" name="p" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Variable Expenses:</label>
+            <input type="number" id="q" name="q" placeholder="0"><br />
+        </p>
+
+        <p>
+            <label name="L1">Total Income:</label>
+            <input type="number" id="r" name="r" placeholder="0"><br />
+        </p>
+
+        <label name="L1">Credit Score:</label>
+        =
+        <output name="s" for="p q r"></output>
+
+        <p><strong>Note:</strong> The closer your score is to zero, the better!</p>
+
+    </form>
+
+</body>
+</html>

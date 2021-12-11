@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+        /* Navigation Bar */
+        .navbar {
+            padding: 20px 10px 20px 0px;
+            background-color: deepskyblue;
+            transition: all ease 0.4s;
+        }
+
+        .navbar-brand {
+            font-size: 22px;
+            color: white !important;
+        }
+
+        .navbar .navbar-nav li a {
+            font-size: 16px;
+            color: white;
+        }
+
+        .fixed {
+            color: black;
+        }
+
+        body {
+            position: relative;
+            left: 5%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand"><strong>BUDGETU</strong></a>
+        </div>
+        <div class="collapse navbar-collapse" id="resNav">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><strong>Home</strong></a></li>
+                <li><a href="#">Budget</a></li>
+                <li><a href="#">Finances</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of Navigation Bar -->
+
+    <h1>Student Credit Score Calculation</h1>
+
+    <p /><hr />
+    <h3>Fixed Expenses</h3>
+
+    <form method="post" action="GetData">
+        <label name="L1">Rent</label>
+        <input type="text" name="Name" />
+    </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Utilities:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Insurance Premiums:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Subscription Services:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Loan Payments:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+    <p /><hr />
+    <h3>Variable Expenses</h3>
+
+    <form method="post" action="GetData">
+        <label name="L1">Total Grocery Expenses:</label>
+        <input type="text" name="Name" />
+    </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Dining Expenses:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Gas Expenses:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Shopping Expenses:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData"
+        <label name = "L1"><strong>Total Recreational/Activity Expenses:</strong></label>
+        <input type="text" name="Name" />
+    </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Miscellaneous Expenses:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+    <p /><hr />
+    <h3>Income</h3>
+
+    <form method="post" action="GetData">
+        <label name="L1">Monthly Income:</label>
+        <input type="text" name="Name" />
+    </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Monthly Allowance:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Total Investment Income:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+
+        <form method="post" action="GetData">
+            <label name="L1">Other Forms Of Income per Month:</label>
+            <input type="text" name="Name" />
+        </form>
+    <p>
+        <br />
+        <input type="submit" name="submit" value="CALCULATE" title="Send This Data" />
+
+
+
+</body>
+</html>
